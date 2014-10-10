@@ -1,0 +1,15 @@
+{
+    "name": "MongoDB",
+    "mongoHost": "localhost",
+    "mongoPort": 27017,
+    "db": [ 
+        {
+            "name": "db1"
+        },
+        {
+            "name": "db2",
+            "user": "user",
+            "pass": "password"
+        }
+    ]
+}
