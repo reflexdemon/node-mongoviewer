@@ -53,14 +53,19 @@ node app.js config.json db1
 ####Here is a sample output
 <h1>foo</h1><div id="objects"><table border="1"><th>_id</th><th>foo</th><tr class="obj"><td class="key">5363b3afeba0685bcec5cd46</td><td class="key">bar</td></tr></table></div>
 
-* Open url `http://localhost:3000/foo/id` where `foo` is the name of `collection` and id is the unique identifier.
+* Open url `http://localhost:3000/foo/5363b3afeba0685bcec5cd46` where `foo` is the name of `collection` and id is the unique identifier.
+```mongo
+	db.foo.find({"_id" : ObjectID(id));
+```
 ####Here is a sample output
-<table>
-<tr><th>field1</th><th>field2</th></tr>
-<tr><td>foo</td></tr>
-</table>
-* Open url `http://localhost:3000/foo/fieldname/value` where `fieldname` is the field that is used for filter with `value`
+```json
+{"_id":"5363b3afeba0685bcec5cd46","foo":"bar"}
+```
 
+* Open url `http://localhost:3000/foo/foo/bar` where `foo` is the field that is used for filter with value `bar`
+```mongo
+	db.foo.find({"foo" : "bar");
+```
 
 [1]: https://help.github.com/articles/set-up-git 'git setup'
 [2]: http://nodejs.org/ 'node.js'
