@@ -54,10 +54,15 @@ ___
 * Open url `http://localhost:3000/foo` where `foo` is the name of `collection`
 ####Here is a sample output
 ___
-<h1>foo</h1><table border="1"><th>_id</th><th>foo</th><tr><td>5363b3afeba0685bcec5cd46</td><td>bar</td></tr></table>
+#foo
+| _id        | foo           |
+| ------------- |:-------------:|
+| 8721a09830192b081203c03f      | bar |
+| 19283021f029830d238b3912      | random |
+
 ___
 
-* Open url `http://localhost:3000/foo/5363b3afeba0685bcec5cd46` where `foo` is the name of `collection` and id is the unique identifier.
+* Open url `http://localhost:3000/foo/8721a09830192b081203c03f` where `foo` is the name of `collection` and id is the unique identifier.
 Mongo query
 ```
 	db.foo.find({"_id" : ObjectID(id));
@@ -65,7 +70,7 @@ Mongo query
 ####Here is a sample output
 ___
 ```json
-{"_id":"5363b3afeba0685bcec5cd46","foo":"bar"}
+{"_id":"8721a09830192b081203c03f","foo":"bar"}
 ```
 ___
 * Open url `http://localhost:3000/foo/foo/bar` where `foo` is the field that is used for filter with value `bar`
@@ -76,7 +81,7 @@ Mongo Query
 ####Here is a sample output
 ___
 ```json
-{"objects":{"_id":"5363b3afeba0685bcec5cd46","foo":"bar"},"collection":"foo"}
+{"objects":{"_id":"8721a09830192b081203c03f","foo":"bar"},"collection":"foo"}
 ```
 ___
 
