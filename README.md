@@ -2,6 +2,7 @@ node-mongoviewer
 ================
 
 This project was mainly developed to learn nodejs and mongo db.
+
 ## Pre-reqs
 
 1. Install [git][1]. Command line tool is strongly recommended.
@@ -85,6 +86,13 @@ ___
 ```
 ___
 
+
+
+## License
+
+### Code
+
+MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/markdown-here/blob/master/LICENSE).
 
 [1]: https://help.github.com/articles/set-up-git 'git setup'
 [2]: http://nodejs.org/ 'node.js'
