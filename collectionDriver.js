@@ -15,7 +15,8 @@ var db;
  * Constructor
  */
 CollectionDriver = function(maxResults) {
-  this.maxResults = maxResults || 50;
+  this.maxResults = maxResults;
+  console.log("Default maximum limit of results:" + maxResults);
 };
 
 
