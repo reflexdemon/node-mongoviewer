@@ -22,7 +22,7 @@ $ npm install
 ```
 node app.js config.json db1
 ```
-###Sample Config JSON
+###Sample `config.json`
 ```json
 {
     "name": "MongoDB",
