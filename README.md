@@ -40,7 +40,15 @@ node app.js config.json db1
     ]
 }
 ```
+###Usecases
 
+* Open browser `http://localhost:3000` to view the `collections` in the DB
+
+* Open url `http://localhost:3000/foo` where `foo` is the name of `collection`
+
+* Open url `http://localhost:3000/foo/id` where `foo` is the name of `collection` and id is the unique identifier.
+
+* Open url `http://localhost:3000/foo/fieldname/value` where `fieldname` is the field that is used for filter with `value`
 
 
 [1]: https://help.github.com/articles/set-up-git 'git setup'
