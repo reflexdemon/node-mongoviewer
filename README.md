@@ -92,7 +92,7 @@ ___
 
 ### Code
 
-MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/markdown-here/blob/master/LICENSE).
+MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/reflexdemon/node-mongoviewer/blob/master/LICENSE).
 
 [1]: https://help.github.com/articles/set-up-git 'git setup'
 [2]: http://nodejs.org/ 'node.js'
