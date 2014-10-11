@@ -1,11 +1,21 @@
 body
     h1= collection
     #objects
-    table(border=1)
       if objects.length > 0
+        form(name="search", action="search", method="GET")
           - each val, key in objects[0]
-              th= key 
-          - each obj in objects
-            tr.obj
-              - each val, key in obj
-                td.a(href='val')=val
+            p #{key}
+              input(type="text", name="#{key}")
+          input(type="submit", value="Search")
+    #objects
+    table(border=1)
+      tr
+        - each val, key in objects[0]
+          th=key          
+      if objects.length > 0
+        - each obj in objects
+          tr.obj
+            - each val, key in obj
+              - var display=val.substring(val.indexOf('.') + 1)
+                td
+                  a(href='#{display}') #{val}

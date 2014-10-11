@@ -118,8 +118,8 @@ CollectionDriver.prototype.getByField = function(collectionName, fieldName, id, 
         else {
             var filter ='{"'+ fieldName + '" : "' + id + '"}';
             var filterObj =JSON.parse(filter);
-            console.log('Querying filter, ' , filter);
-             the_collection.findOne(filterObj, {}, { limit : this.maxResults }, function(error,doc) { //C
+            console.log('Querying filter, ' , filterObj);
+             the_collection.find(filterObj, { limit : this.maxResults }, function(error,doc) { //C
                 if (error) callback(error);
                 else callback(null, doc);
             });

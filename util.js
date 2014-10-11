@@ -24,12 +24,20 @@ Util.prototype.getDBDetails = function(dbConnection, database) {
 }
 
 /**
- * Fetchs the configuration form supplied config.json
+ * Fetchs the configuration from supplied config.json
  * TODO: Implement Async IO
  */
 Util.prototype.getConfig  = function(config) {
 	return env = JSON.parse(fs.readFileSync(config, 'utf8'));
-	// if (env) console.log("env:" + JSON.stringify(env));
+}
+
+/**
+ * Fetchs the DB list from supplied config.json
+ * TODO: Implement Async IO
+ */
+Util.prototype.getDB  = function(config) {
+  env = JSON.parse(fs.readFileSync(config, 'utf8'));
+  if (env.db) return env.db
 }
 
 /**

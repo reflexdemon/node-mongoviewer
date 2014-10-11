@@ -28,14 +28,14 @@ var usage = "USAGE:\n"
             ;
 //Read command line args
 var myArgs = process.argv.slice(2);
-if (myArgs.length != 2) {
+if (myArgs.length < 2) {
   console.log(usage);
   process.exit(1); 
 }
 
 var config = myArgs[0];
 var database = myArgs[1];
-var limit = myArgs[1] || 50;
+var limit = myArgs[2] || 50;
 
 //The homemade MONGO Dao :)
 collectionDriver = new CollectionDriver(limit);
