@@ -9,8 +9,7 @@
   },
   "bugs": {
     "url": "https://github.com/reflexdemon/node-mongoviewer/issues"
-  },
-  "keywords": [
+},    "keywords": [
     "mongo",
     "mongodb",
     "node",

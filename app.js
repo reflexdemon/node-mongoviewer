@@ -68,13 +68,13 @@ app.get('/', function(req, res) {
 });
 
 //This takes the Collection name and displays first 20 results
-app.get('/:collection', function(req, res) { //A
-    var params = req.params; //B
+app.get('/:collection', function(req, res) {
+    var params = req.params;
     collectionDriver.findAll(req.params.collection, function(error, objs) {
         if (error) {
             res.status(400).send(error);
         } else {
-            if (req.accepts('html')) { //E
+            if (req.accepts('html')) {
                 res.render('data', {
                     objects: objs,
                     collection: req.params.collection
