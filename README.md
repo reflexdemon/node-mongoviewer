@@ -21,8 +21,14 @@ $ npm install
 ```
 ##Run
 ```
-node app.js config.json db1
+node app.js config.json db1 [limit]
 ```
+* `app.js` : This is the main app to run
+* `config.json` : See below for the configuration; see below for sample.
+* `db1` : This the database that you would like to connect on the configuration
+* `limit` : Optional. Specify any values for the queries to limit resultset. Defaulted to `50`.
+
+
 ###Sample `config.json`
 ```json
 {
