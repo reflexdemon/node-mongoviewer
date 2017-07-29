@@ -16,9 +16,9 @@
     "viewer"
   ],
   "dependencies": {
-    "express": "4.9.6",
-    "jade": "1.7.0",
-    "mongodb": "1.4.19",
-    "lodash": "2.4.1"
+    "express": "4.15.3",
+    "jade": "1.11.0",
+    "mongodb": "2.2.30",
+    "lodash": "4.17.4"
   }
 }
