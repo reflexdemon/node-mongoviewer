@@ -1,6 +1,8 @@
 node-mongoviewer
 ================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/reflexdemon/node-mongoviewer.svg)](https://greenkeeper.io/)
+
 This project was mainly developed to learn nodejs and mongo db.
 
 ## Pre-reqs
